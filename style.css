@@ -90,7 +90,7 @@ section.card {
     background-color: var(--secondary-color);
     border-radius: 1.2rem;
     margin-top: 1.6rem;
-    padding: 2.1rem;
+    padding: 2rem;
 
     height: 48rem;
     width: 28rem;
@@ -104,3 +104,114 @@ section.card {
     justify-content: space-around;
     align-items: center  
 }
+
+div.card__description,
+div.card__stats,
+div.card__info,
+.card__img {
+    width: 100%;
+}
+
+.card__img {
+    position: relative;
+}
+
+.card__img img {
+    border-radius: 0.7rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+div.card__stats {
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+div.card__stats--eth, 
+div.card__stats--time,
+div.card__info {
+    display: flex; 
+}
+
+div.card__stats--time p, 
+div.card__stats--eth p,
+div.card__info p         {
+    font-size: 1.4rem;
+}
+
+div.card__stats--eth p {
+    color: var(--font-color-specify);
+    font-weight: 600;
+}
+
+div.card__stats--eth svg, 
+div.card__stats--time svg {
+    margin: 0.1rem 0.7rem 0 auto;
+}
+
+div.card__info {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.card__info--avatar {
+    background-image: url(images/image-avatar.png);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px var(--font-color-h);
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    height: 2.9rem;
+    width: 2.9rem;
+}
+
+div.card__info p {
+    padding-top: 0.7rem;
+}
+    
+div.attribution { 
+    color: var(--font-color-h);
+    font-size: 1.1rem;  
+    text-align: center; 
+}
+div.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+
+.group__1 {
+    animation: animation__group__1 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.group__2 {
+    animation: animation__group__2 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
+@keyframes animation__group__1 {
+    0% {
+        transform: translateY(-30rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+}
+
+@keyframes animation__group__2 {
+    0% {
+        transform: rotateY(360deg);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
