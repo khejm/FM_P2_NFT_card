@@ -25,3 +25,64 @@
     --font-color-specify: hsl(178, 100%, 50%);
 
 }
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.4;
+    min-height: 100vh;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;   
+}
+
+h1, hr, p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--font-color-h);
+    font-size: 1.95rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+hr {
+    height: 0.09rem;
+    width: 26.8rem;
+    background-color: var(--line-color);
+    border: none;
+}
+
+p {
+    color: var(--font-color-p);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0.9rem;
+}
+
+span {
+    color: var(--font-color-h)
+}
+
+span:hover,
+h1:hover {
+    color: var(--font-color-specify);
+    cursor: pointer;
+}
+
+
+/* *-*-*-*-*-*-*-*-*-*-*-*-* Main Styling*-*-*-*-*-*-*-*-*-*-*-*-* */
