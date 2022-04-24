@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* *-*-*-*-*-*-*-*-*-*-*-*-* Utility Components *-*-*-*-*-*-*-*-*-*-*-*-* */
+
+:root {
+    font-size: 62.5%;
+    
+
+    /**** Custom Properties ****/
+
+
+    --primary-color: hsl(217, 54%, 11%);
+    --secondary-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+
+    /* Fonts Color */
+    --font-color-h: hsl(0, 0%, 100%);
+    --font-color-p: hsl(215, 51%, 70%);
+    --font-color-specify: hsl(178, 100%, 50%);
+
+}
