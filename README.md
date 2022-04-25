@@ -19,7 +19,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 - Solution URL: https://github.com/khejm/FM_P2_NFT_card.git
-- Live Site URL:
+- Live Site URL: https://khejm.github.io/FM_P2_NFT_card/
 
 ## My process
 
