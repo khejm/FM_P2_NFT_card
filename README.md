@@ -19,6 +19,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ![NFT card Screenshot](NFT_screenshot.jpg)
 
 ### Links
+- Solution URL: https://github.com/khejm/FM_P2_NFT_card.git
+- Live Site URL:
 
 ## My process
 
