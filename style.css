@@ -103,7 +103,7 @@ section.card {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    
 }
 
 div.card__description,
@@ -115,8 +115,15 @@ div.card__info{
 .card__img img {
     border-radius: 0.7rem;
     cursor: pointer;
-    height: 100%;
+    height: 100%;   
     width: 100%;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .card__img::before,
@@ -126,9 +133,14 @@ div.card__info{
     opacity: 0;
     position: absolute;
     background-size: contain;
-    animation: none;
 }
 
+.card__img:hover::before {
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s all ease-in;
+}
 
 
 div.card__stats {
