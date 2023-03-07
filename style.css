@@ -6,14 +6,10 @@
     padding: 0;
 }
 
-/* *-*-*-*-*-*-*-*-*-*-*-*-* Utility Components *-*-*-*-*-*-*-*-*-*-*-*-* */
 
 :root {
     font-size: 62.5%;
     
-
-    /**** Custom Properties ****/
-
 
     --primary-color: hsl(217, 54%, 11%);
     --secondary-color: hsl(216, 50%, 16%);
@@ -84,10 +80,10 @@ h1:hover {
 
 /* *-*-*-*-*-*-*-*-*-*-*-*-* Main Styling*-*-*-*-*-*-*-*-*-*-*-*-* */
 section.card,
-div.card__stats,
-div.card__stats--eth, 
-div.card__stats--time,
-div.card__info {
+.card__stats,
+.card__stats--eth, 
+.card__stats--time,
+.card__info {
     display: flex; 
 }
 
@@ -106,32 +102,32 @@ section.card {
     box-shadow: 8px 16px 40px 20px hsl(215, 55%, 8%);
 }
 
-div.card__description,
-div.card__stats,
-div.card__info,
-div.card__img,
-div.card__img img {
+.card__description,
+.card__stats,
+.card__info,
+.card__img,
+.card__img img {
     width: 100%;
 }
 
-div.card__img,
-div.card__img img {
+.card__img,
+.card__img img {
     height: 100%;  
 }
 
-div.card__img img {
+.card__img img {
     cursor: pointer;
 }
 
-div.card__img {
+.card__img {
     border-radius: 0.8rem;
     margin-bottom: 2rem;
     overflow: hidden;
     position: relative;
 }
 
-div.card__img::before,
-div.card__img::before {
+.card__img::before,
+.card__img::before {
     content:'';
     background-image: url("images/icon-view.svg");
     background-position: center;
@@ -142,41 +138,41 @@ div.card__img::before {
     position: absolute;
 }
 
-div.card__img:hover::before {
+.card__img:hover::before {
     opacity: 1;
     height: 100%;
     width: 100%;
     transition: 0.2s ease;
 }
 
-div.card__stats {
+.card__stats {
     align-items: center; 
     justify-content: space-between;
     padding: 1rem 0;
 }
 
-div.card__stats--time p, 
-div.card__stats--eth p,
-div.card__info p         {
+.card__stats--time p, 
+.card__stats--eth p,
+.card__info p         {
     font-size: 1.3rem;
 }
 
-div.card__stats--eth p {
+.card__stats--eth p {
     color: var(--font-color-specify);
     font-weight: 600;
 }
 
-div.card__stats--eth svg, 
-div.card__stats--time svg {
+.card__stats--eth svg, 
+.card__stats--time svg {
     margin: 0.1rem 0.7rem 0 auto;
 }
 
-div.card__info {
+.card__info {
     align-items: center;
     justify-content: flex-start;
 }
 
-div.card__info--avatar {
+.card__info--avatar {
     background-image: url(images/image-avatar.png);
     background-size: cover;
     background-position: center;
@@ -187,17 +183,17 @@ div.card__info--avatar {
     width: 2.7rem;
 }
 
-div.card__info p {
+.card__info p {
     padding-top: 0.7rem;
 }
     
-div.attribution { 
+.attribution { 
     color: var(--font-color-h);
     font-size: 1.1rem;  
     text-align: center; 
 }
 
-div.attribution a { 
+.attribution a { 
     color: hsl(228, 45%, 44%); 
 } 
 
